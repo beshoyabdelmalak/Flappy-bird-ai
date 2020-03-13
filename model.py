@@ -25,7 +25,7 @@ class Bird:
 		# keep track of the frames
 		self.tick_count = 0
 		self.velocity = 0
-		self.hight = self.y
+		self.height = self.y
 		self.img_count = 0
 		self.img = self.IMGS[0]
 
@@ -55,7 +55,7 @@ class Bird:
 				self.tilt = self.MAX_ROTATION
 		# if going down
 		else:
-			if self.tilt > -90 and self.y > self.hight + 50:
+			if self.tilt > -90 and self.y > self.height + 50:
 				self.tilt -= 10
 
 	def draw(self, window):

@@ -21,7 +21,7 @@ def draw_window(window, birds, base, pipes, score, gen):
 	score = STAT_FONT.render("Score: " + str(score), 1, (255,255,255))
 	window.blit(score, (WN_WIDTH - 10  - score.get_width(), 10))
 
-	generation = STAT_FONT.render("Geration: " + str(gen), 1, (255,255,255))
+	generation = STAT_FONT.render("Genration: " + str(gen), 1, (255,255,255))
 	window.blit(generation, (10, 10))
 
 	base.draw(window)
